@@ -11,13 +11,13 @@ async function startBot() {
   let site = "https://www.linkedin.com";
   await page.visit(site);
 
-  await sleep(5);
+  await sleep(3);
 
   await page.signin();
   await sleep(20);
 
   site = "https://www.linkedin.com/mynetwork/invitation-manager";
-  await sleep(5);
+  await sleep(3);
   await page.visit(site);
 
   for (let i = 3; i < 10000; i++) {
